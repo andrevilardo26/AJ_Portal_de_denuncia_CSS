@@ -64,8 +64,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  text-align: left;
+  color: #212524;
+  text-align: center;
 
 }
 
@@ -161,15 +161,14 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #00ace6;
 }
 
 a:not([href]):not([tabindex]) {
@@ -218,6 +217,12 @@ svg {
 
 table {
   border-collapse: collapse;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00ace6;
+    margin-top: 2.5%;
+
 }
 
 caption {
@@ -229,7 +234,8 @@ caption {
 }
 
 th {
-  text-align: inherit;
+  text-align: center;
+    height: auto;
 }
 
 label {
@@ -1839,7 +1845,7 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: #00ace6;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -2615,8 +2621,8 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #00ace6 ;
+  border-color: #00ace6;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -4799,7 +4805,7 @@ input[type="button"].btn-block {
 .badge-primary[href]:hover, .badge-primary[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #0062cc;
+  background-color: #ffffff;
 }
 
 .badge-secondary {
@@ -4832,7 +4838,7 @@ input[type="button"].btn-block {
 .badge-info[href]:hover, .badge-info[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #117a8b;
+  background-color: #fff;
 }
 
 .badge-warning {
@@ -4883,6 +4889,7 @@ input[type="button"].btn-block {
   padding: 2rem 1rem;
   background-color: #2A2B2E;
   text-color: white;
+    height: 230px;
 }
 
 @media (min-width: 576px) {
