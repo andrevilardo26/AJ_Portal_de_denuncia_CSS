@@ -15,54 +15,44 @@
     </head>
     <header>
         <div class="capa">
-        </div>
-        <div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h4 class="text-white">Collapsed content</h4>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
     </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div>
 
     </header>
     <body>
 
         <div class="jumbotron">
-            <h1 class="display-4">Portal de Denúncias BSI</h1>
+            <h2 class="display-4">Portal de Denúncias BSI</h2>
             <p class="lead">Powered By:</p>
-            <div> 
+            <div class="logo">
                 <img src="logotipo-alpha.png">
             </div>
         </div>
 
         <div class="fundo">
-            <div class="formulario">
-                <p>Bem vindo, faça aqui sua denúncia anônima</p>
-                <input type="text" placeholder="denuncie aqui" size="50">
-                <br>
-                <p>Ou faça sua denuncia assinada</p>
-                <input type="text" placeholder="email">
-                <br>
-                <button type="submit" class="btn btn-primary">Denunciar</button>
 
+            <form>
+                <div class="form-group">
+                        <h2>FAÇA SUA DENUNCIA</h2>
+                        <p>Descrição da sua Denuncia:</p>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                         </div>
+                        <fieldset id="anonimo">
+                            <input type="radio" name="nAnonimo" id="iAnonimo"> <label for="iAnonimo">Não desejo me identificar</label>
+                            <input type="radio" name="nAnonimo" id="iIdentificar"> <label for="iIdentificar">Desejo me identificar</label>
+                        </fieldset>
 
-
-
-
-            </div>
-            <div class="denuncias"></div>
+                    <p>Email:</p>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    </fieldset>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                </div>
+            </form>
         </div>
 
     </body>
-    
-    
-    
 
 <footer class="foot">
 
