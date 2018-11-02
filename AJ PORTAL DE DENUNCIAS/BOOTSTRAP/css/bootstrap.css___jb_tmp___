@@ -403,7 +403,6 @@ h6, .h6 {
   font-size: 1.25rem;
   font-weight: 300;
   color: #ffffff;
-    font-family: font85995;
 }
 
 .display-1 {
@@ -429,7 +428,6 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
   color: #ffffff;
-    font-family: font85995;
 }
 
 hr {
@@ -1526,10 +1524,9 @@ pre code {
 }
 
 .table {
-  width: 70%;
+  width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
-    margin-left: 15%;
 }
 
 .table th,
@@ -1960,6 +1957,7 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 1rem;
+  margin-left: 50%;
 }
 
 .form-text {
