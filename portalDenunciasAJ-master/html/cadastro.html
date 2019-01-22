@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portal de Denúncias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Import CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/conteudoIndex.css"
+    />
+      
+     <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/comissao.css"
+    />
+
+    <!--Botstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Font Alpha-->
+    <link
+      href="https://www.fontify.me/wf/e616f23df7318a71e791bef275123744"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-display">
+          <h1>Portal de Denúncias BSI</h1>
+          <nav><a href="">Inicio</a> <a href="">Comissão</a></nav>
+        </div>
+      </div>
+    </header>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="termosDeUso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container conteudo-style">
+        <div class="form-group formatacao-cadastro">
+					<form>
+
+						<legend>Nome</legend>
+                        <input type="text" 
+                        class="form-control"
+                        id="exampleName"
+                        placeholder="Nome Completo">
+                        
+                        <legend>Endereço de E-mail:</legend>
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Email">
+                        
+                        <legend>Data de Nascimento:</legend>
+                        <input
+                        type="date"
+                        class="form-control"
+                        id="exampleInputData">
+                        
+                        <legend>FOTO DE USUÁRIO</legend>
+                        <input
+                        type="file"
+                        id="exampleInputEmail1"
+                        placeholder="Selecione uma foto">
+
+
+				        <button class="btn btn-primary butaoCadastro"
+				        type="submit" required>  
+				        <span>Cadastrar</span>
+                        </button>
+                            
+					
+				</form>
+        </div>
+      </div>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="descricaoAJ col-3">
+            <h6 class="font-weight-bold">ALPHA JUNIOR CONSULTORIA</h6>
+            <p>
+              Empresa Junior do curso Bacharel em Sistemas de Informação, da
+              <br />
+              Universidade Federal do Estado do Rio de Janeiro
+            </p>
+          </div>
+
+          <div class="contatosAJ">
+            <h6 class="font-weight-bold">CONTATE-NOS</h6>
+            <p><i class="fa fa-home mr-3"></i>Avenida Pasteur 458, RJ</p>
+            <p><i class="fa fa-envelope mr-3"></i> alphajunior@uniriotec.br</p>
+            <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+          </div>
+
+          <div>
+            <ul class="formatacao-listaContatos">
+              <li>
+                <a
+                  href="https://www.facebook.com/alphajuniorconsultoria/"
+                  class="btn-sm"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/alphajr_rj/" class="btn-sm">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-sm"> <i class="fab fa-linkedin"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr style="background-color: rgb(64, 64, 70);" />
+
+        <div>
+          <p class="text-center text-md-left">
+            © 2018 Copyright:
+            <a href="https://alphajunior.uniriotec.br" target="blank">
+              <strong>Alpha Junior Consultoria</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  </body>
+</html>

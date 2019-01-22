@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portal de Denúncias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Import CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/conteudoIndex.css"
+    />
+
+    <!--Botstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Font Alpha-->
+    <link
+      href="https://www.fontify.me/wf/e616f23df7318a71e791bef275123744"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-display">
+          <h1>Portal de Denúncias BSI</h1>
+          <nav><a href="">Inicio</a> <a href="">Comissão</a></nav>
+        </div>
+      </div>
+    </header>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="termosDeUso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         Termos de uso
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container conteudo-style">
+      <p>
+        O Portal de Denúncias do BSI foi desenvolvido com o intuito de facilitar
+        e transparecer o processo de submissão de denúncias e reclamações da
+        comunidade acadêmica. Uma denúncia submetida é averiguada pela
+        <a href="#">comissão</a> e encaminhada ao público adequado, como o NAPE,
+        a diretoria ou a decania.
+      </p>
+
+      <div>
+        <form action="">
+          <div class="form-group formatacao-formulario">
+            <h2>FAÇA SUA DENÚNCIA</h2>
+            <div class="questionarioRelatorio row">
+
+              <div class="col-6">
+                <legend>Descrição da sua Denúncia:</legend>
+                <textarea
+                  class="form-control"
+                  id="textDenuncia"
+                  rows="9,5"
+                >
+                </textarea>
+              </div>
+  
+              <div  class="col-6">
+                <fieldset>
+                  <legend>Visibilidade da denúncia:</legend>
+                  <p>
+                    <input type="radio" name="privacidade" id="publico" />
+                    <label for="publico">Visível para o público</label>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="aaaaaaaaaaaaaa">
+                      <i class="fas fa-question-circle"></i>
+                    </a>
+                  </p>
+                  <p>
+                    <input type="radio" name="privacidade" id="privado" />
+                    <label for="privado">Visível apenas para a comissão</label>
+                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                        <i class="fas fa-question-circle"></i>
+                      </a>
+                  </p>
+                </fieldset>
+                
+                <legend>Email:</legend>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                />
+  
+                <fieldset>
+                  <input type="checkbox" name="termos" id="termosObrigatorio" />
+                  <label for="termosObrigatorio">Aceito os <a href="#" class="button-termos" data-toggle="modal" data-target="#termosDeUso">termos de política de uso</a></label>
+                </fieldset>
+
+                <button type="submit" class="btn btn-outline-primary">
+                  Submeter Formulário
+                </button>
+              </div>             
+            </div>
+       
+          </div>
+        </form>
+      </div>
+
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+          <tr>
+            <th>Denunciante</th>
+            <th>Responsável</th>
+            <th>Data</th>
+            <th>Denúncia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-warning">
+            <td>Anônimo</td>
+            <td>João do Prédio</td>
+            <td>26/10</td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              lorem nulla, fringilla in faucibus nec, tempor id lorem. Quisque
+              velit sapien, sollicitudin vitae massa ut, ultrices imperdiet
+              augue. Curabitur id lobortis arcu. Cras quis libero lorem.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="descricaoAJ col-3">
+            <h6 class="font-weight-bold">ALPHA JUNIOR CONSULTORIA</h6>
+            <p>
+              Empresa Junior do curso Bacharel em Sistemas de Informação, da
+              <br />
+              Universidade Federal do Estado do Rio de Janeiro
+            </p>
+          </div>
+
+          <div class="contatosAJ">
+            <h6 class="font-weight-bold">CONTATE-NOS</h6>
+            <p><i class="fa fa-home mr-3"></i>Avenida Pasteur 458, RJ</p>
+            <p><i class="fa fa-envelope mr-3"></i> alphajunior@uniriotec.br</p>
+            <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+          </div>
+
+          <div>
+            <ul class="formatacao-listaContatos">
+              <li>
+                <a
+                  href="https://www.facebook.com/alphajuniorconsultoria/"
+                  class="btn-sm"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/alphajr_rj/" class="btn-sm">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-sm"> <i class="fab fa-linkedin"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr style="background-color: rgb(64, 64, 70);" />
+
+        <div>
+          <p class="text-center text-md-left">
+            © 2018 Copyright:
+            <a href="https://alphajunior.uniriotec.br" target="blank">
+              <strong>Alpha Junior Consultoria</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  </body>
+</html>

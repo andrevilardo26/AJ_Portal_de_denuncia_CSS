@@ -1,0 +1,48 @@
+.conteudo-style{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.conteudo-style p{
+    text-align: center;
+}
+
+.formatacao-formulario{
+    border:2px solid #00ace6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formatacao-formulario legend{
+    font-size:18px;
+    font-weight: 600;
+}
+
+.formatacao-formulario p{
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.formatacao-formulario a:hover{
+    color: #0a0db1d2;
+    text-decoration: none;
+}
+
+.formatacao-formulario button{
+    margin-top: 15px;
+}
+
+.questionarioRelatorio{
+    display:flex;
+    flex-direction: row;
+}
+
+.table{
+    text-align: center;
+    border: 2px solid #00ace6;
+}
+
+.btn-interrogacion{
+    background: none;
+}
