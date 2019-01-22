@@ -3,6 +3,24 @@
     border-radius: 10px;
     padding: 20px;
     width: 40%;
-    margin: 10px;
+    margin-bottom: 600px;
     align-self: center;
+}
+
+.formatacao-cadastrado{
+    border:2px solid #00ace6;
+    padding: 20px;
+    width: 90%;
+    margin: 10px;
+    margin-top: 90px;
+    align-self: center;
+}
+
+.btnfoto{
+margin-bottom: 30px;
+}
+
+.btncadastrar{
+align-content: center;
+align-self: center;
 }
