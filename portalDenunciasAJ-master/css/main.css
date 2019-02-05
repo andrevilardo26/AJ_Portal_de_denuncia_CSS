@@ -1,40 +1,31 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-content: space-between;
 }
-
 
 /*SECTION Header*/
 header{
     font-family:font85995;
     background-color: #2A2B2E;
-    color: #fff;
-    padding: 50px;
+    padding:20px 0px;
+    margin-bottom:20px;
 }
 
 header h1{
     font-family:font85995;
     font-size: 55px;
-    margin-bottom: 25px;
+    color:#fff;
 }
 
 header a{
-    background-color:rgb(255, 255, 255);
     padding: 10px;
-    color:rgb(0, 0, 0);
-}
-
-header a:hover{
-    background-color:rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
-    text-decoration: none;
 }
 
 .header-display{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*SECTION Footer*/
@@ -45,7 +36,7 @@ footer{
 }
 
 .footer-content{
-    margin: 30px 0px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -59,4 +50,63 @@ footer{
 .formatacao-listaContatos i{
     color:#fff;
     font-size: 35px;
+}
+
+.formatacao-formulario{
+    border:2px solid #dee3e4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.formDetalhe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formatacao-formulario legend{
+    font-size:18px;
+    font-weight: 600;
+}
+
+.formatacao-formulario p{
+    margin-bottom: 0px;
+}
+
+.formatacao-formulario a:hover{
+    color: #0a0db1d2;
+    text-decoration: none;
+}
+
+.btn-interrogacion{
+    background: none;
+}
+
+
+textarea{
+    resize: none;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo{
+   margin-left: 12%;
+}
+
+.table td{
+    vertical-align: middle;
+}
+
+.tagRevisao{
+    background: rgb(245, 228, 0);
+}
+
+.tagSolucionada{
+    background: rgb(21, 192, 30);
+}
+
+.tagCancelada{
+    background: rgb(255, 60, 46);
 }

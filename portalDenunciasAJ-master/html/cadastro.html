@@ -6,6 +6,9 @@
     <title>Portal de Denúncias - Cadastro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!--Botstrap-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../bootstrap/css/bootstrap.css" />
+
     <!--Import CSS-->
     <link
       rel="stylesheet"
@@ -18,22 +21,7 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../css/conteudoIndex.css"
-    />
-      
-     <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
       href="../css/comissao.css"
-    />
-
-    <!--Botstrap-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
     />
 
     <link
@@ -56,102 +44,102 @@
       <div class="container">
         <div class="header-display">
           <h1>Portal de Denúncias BSI</h1>
-          <nav><a href="">Inicio</a> <a href="">Comissão</a></nav>
+          <nav><a class="btn btn-light" href="index.html">Inicio</a> <a class="btn btn-light" href="membros.html">Comissão</a> <a class="btn btn-light" href="relatorioMembroAutenticado.html">Relatório</a></nav>
         </div>
       </div>
     </header>
 
-  
- <!-- Modal -->
-<div class="modal fade" id="termosDeUso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="container espacamentoPadrao">
+      <div>
+          <form>
+              <div class="form-group formatacao-formulario">
+                <h2>Cadastro de Novos Membros</h2>
+                <div class="row">
+                  <div class="col-9 formDetalhe">
 
-    <div class="container conteudo-style">
-        <div class="form-group formatacao-cadastro">
-					<form>
-
-						<legend>Nome</legend>
-                        <input type="text" 
+                    <div>
+                      <legend>Nome</legend>
+                      <input
+                        type="text"
                         class="form-control"
-                        id="exampleName"
-                        placeholder="Nome Completo">
-                        
-                        <legend>Endereço de E-mail:</legend>
-                        <input
+                        id="nameMembroAdd"
+                        placeholder="Nome Completo"/>
+                    </div>
+                  
+                    <div>
+                      <legend>Endereço de E-mail:</legend>
+                      <input
                         type="email"
                         class="form-control"
-                        id="exampleInputEmail1"
-                        placeholder="Email">
-                        
-                        <legend>Data de Nascimento:</legend>
-                        <input
-                        type="date"
-                        class="form-control"
-                        id="exampleInputData">
-                        
-                        <legend>FOTO DE USUÁRIO</legend>
-                        <input
-                        type="file"
-                        id="exampleInputEmail1"
-                        class="btnfoto"
-                        placeholder="Selecione uma foto">
+                        id="emailMembroAdd"
+                        placeholder="Email"/>
+                    </div>
+                    
+                    <div>
+                      <legend>Data de Nascimento:</legend>
+                      <input type="date" class="form-control" />    
+                    </div>
 
-				        <button class="btn btn-primary"
-				        type="submit" required>  
-				        <span class="btncadastrar">Cadastrar</span>
-                        </button>
-                            
-					
-				</form>
-        </div>
-        
-  <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Membros</th>
-      <th scope="col">Data de Cadastro</th>
-      <th scope="col">Situação</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>João</td>
-      <td>01/03/1019</td>
-      <td>Autenticado</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Leo</td>
-      <td>06/03/1019</td>
-      <td>Autenticado</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Pedro</td>
-      <td>20/04/1019</td>
-      <td>Excluído</td>
-    </tr>
-  </tbody>
-</table>
-
+                    <div>
+                      <button class="btn btn-primary" type="submit" required>
+                        <span class="btncadastrar">Cadastrar</span>
+                      </button>
+                    </div>
+                  </div>
       
-        
-      </div>
+                  <div class="col-3">
+                    <legend>Foto do usuário</legend>
+                    <div  class=" text-center" >
+                        <img src="http://lorempixel.com/240/230/people" alt=""/>
+                    </div>
+      
+                    <div class="input-group">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="fotoMembroAdd"/>
+                        <label class="custom-file-label">Choose file</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+      
+      <table class="table table-hover table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Membros</th>
+            <th scope="col">Data de Cadastro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>João</td>
+            <td class="campo-statusMembro">
+                01/03/1019
+                <i class="fas fa-times-circle"></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Leo</td>
+            <td class="campo-statusMembro">
+                01/03/1019
+                <i class="fas fa-times-circle"></i>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pedro</td>
+            <td class="campo-statusMembro">
+                01/03/1019
+                <i class="fas fa-times-circle"></i>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <footer>
       <div class="container">
@@ -169,7 +157,6 @@
             <h6 class="font-weight-bold">CONTATE-NOS</h6>
             <p><i class="fa fa-home mr-3"></i>Avenida Pasteur 458, RJ</p>
             <p><i class="fa fa-envelope mr-3"></i> alphajunior@uniriotec.br</p>
-            <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
           </div>
 
           <div>
@@ -191,6 +178,9 @@
                 <a class="btn-sm"> <i class="fab fa-linkedin"></i> </a>
               </li>
             </ul>
+            <div class="logo">
+              <img src="../images/logotipo-alpha.png" alt=""">
+            </div>
           </div>
         </div>
 
@@ -207,9 +197,20 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

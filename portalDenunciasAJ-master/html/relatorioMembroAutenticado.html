@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portal de Denúncias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Botstrap-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../bootstrap/css/bootstrap.css"
+    />
+
+    <!--Import CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/comissao.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Font Alpha-->
+    <link
+      href="https://www.fontify.me/wf/e616f23df7318a71e791bef275123744"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-display">
+          <h1>Portal de Denúncias BSI</h1>
+          <nav>
+            <a class="btn btn-light" href="index.html">Inicio</a>
+            <a class="btn btn-light" href="cadastro.html">Comissão</a>
+            <a class="btn btn-light" href="relatorioMembroAutenticado.html"
+              >Relatório</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="filtragem">
+        <div><span>Filtrar Relatório</span></div>
+        <form class="row">
+          <div class="col-lg-3">
+            <legend>Status:</legend>
+            <select class="custom-select" id="formStatus myInput">
+              <option selected>Submetida</option>
+              <option value="1">Aprovada - NAPE</option>
+              <option value="2">Aprovada - Comissão</option>
+              <option value="3">Solucionada</option>
+              <option value="4">Cancelada</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3">
+            <legend>Data de Submissão:</legend>
+            <select class="custom-select" id="formStatus">
+              <option selected>Hoje</option>
+              <option value="1">Ontem</option>
+              <option value="2">Nesta Semana</option>
+              <option value="3">Semana Passada</option>
+              <option value="4">Mês passado</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3">
+            <button type="button" class="btn btn-primary">Filtrar</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <table class="table table-bordered table-responsive table-striped">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Responsável</th>
+              <th>Data</th>
+              <th>Denúncia</th>
+              <th class="statusFormat">Status</th>
+              <th>Observação</th>
+            </tr>
+          </thead>
+          <tbody class="tableMembroAutenticado">
+            <tr class="">
+              <td>Não especificado</td>
+              <td class="nomeFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option selected value="0">João do Prédio</option>
+                      <option value="1">Mariazinha</option>
+                      <option value="2">Carlos Gomes</option>
+                      <option value="3">Fabio Assunção</option>
+                      <option value="4">Luciane Dias</option>
+                      <option value="5">Sem Membro</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+              <td>26/10</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus lorem nulla, fringilla in faucibus nec, tempor id
+                lorem. Quisque velit sapien, sollicitudin vitae massa ut,
+                ultrices imperdiet augue. Curabitur id lobortis arcu. Cras quis
+                libero lorem. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae
+              </td>
+              <td class="statusFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option value="0">Submetida</option>
+                      <option value="1"
+                        >Aprovada - Em Revisão pela Comissão</option
+                      >
+                      <option value="2"
+                        >Aprovada - Em Revisão pelo NAPE/Corpo Docente</option
+                      >
+                      <option value="3">Solucionada</option>
+                      <option value="4">Cancelada</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+            </tr>
+
+            <tr class="">
+              <td>Não especificado</td>
+              <td class="nomeFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option value="0">João do Prédio</option>
+                      <option selected value="1">Mariazinha</option>
+                      <option value="2">Carlos Gomes</option>
+                      <option value="3">Fabio Assunção</option>
+                      <option value="4">Luciane Dias</option>
+                      <option value="5">Sem Membro</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+              <td>26/10</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus lorem nulla, fringilla in faucibus nec, tempor id
+                lorem. Quisque velit sapien, sollicitudin vitae massa ut,
+                ultrices imperdiet augue. Curabitur id lobortis arcu. Cras quis
+                libero lorem. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae
+              </td>
+              <td class="statusFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option disabled value="0">Submetida</option>
+                      <option selected value="1"
+                        >Aprovada - Em Revisão pela Comissão</option
+                      >
+                      <option value="2"
+                        >Aprovada - Em Revisão pelo NAPE/Corpo Docente</option
+                      >
+                      <option value="3">Solucionada</option>
+                      <option value="4">Cancelada</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+            </tr>
+
+            <tr class="">
+              <td>mariazinha@uniriotec.br</td>
+              <td class="nomeFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option disabled value="0">João do Prédio</option>
+                      <option disabled value="1">Mariazinha</option>
+                      <option disabled value="2">Carlos Gomes</option>
+                      <option disabled value="3">Fabio Assunção</option>
+                      <option disabled value="4">Luciane Dias</option>
+                      <option selected value="5">Sem Membro</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+              <td>26/10</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus lorem nulla, fringilla in faucibus nec, tempor id
+                lorem. Quisque velit sapien, sollicitudin vitae massa ut,
+                ultrices imperdiet augue. Curabitur id lobortis arcu. Cras quis
+                libero lorem. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae
+              </td>
+              <td class="statusFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option disabled value="0">Submetida</option>
+                      <option disabled value="1"
+                        >Aprovada - Em Revisão pela Comissão</option
+                      >
+                      <option disabled value="2"
+                        >Aprovada - Em Revisão pelo NAPE/Corpo Docente</option
+                      >
+                      <option selected value="3">Solucionada</option>
+                      <option disabled value="4">Cancelada</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis sunt placeat maiores cumque consequatur velit iste
+                voluptatem, neque quo reprehenderit quibusdam quos ipsa atque
+                aut libero eaque, praesentium veniam aliquam.
+              </td>
+            </tr>
+
+            <tr class="">
+              <td>pedrinho@uniriotec.br</td>
+              <td class="nomeFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option disabled value="0">João do Prédio</option>
+                      <option disabled value="1">Mariazinha</option>
+                      <option disabled value="2">Carlos Gomes</option>
+                      <option disabled value="3">Fabio Assunção</option>
+                      <option disabled value="4">Luciane Dias</option>
+                      <option selected value="5">Sem Membro</option>
+                    </select>
+                  </div>
+                </form>
+              </td>
+              <td>26/10</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus lorem nulla, fringilla in faucibus nec, tempor id
+                lorem. Quisque velit sapien, sollicitudin vitae massa ut,
+                ultrices imperdiet augue. Curabitur id lobortis arcu. Cras quis
+                libero lorem. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae
+              </td>
+              <td class="statusFormat">
+                <form>
+                  <div class="form-row">
+                    <select class="custom-select statusSelect" id="formStatus">
+                      <option disabled value="0">Submetida</option>
+                      <option disabled value="1"
+                        >Aprovada - Em Revisão pela Comissão</option
+                      >
+                      <option disabled value="2"
+                        >Aprovada - Em Revisão pelo NAPE/Corpo Docente</option
+                      >
+                      <option disabled value="3">Solucionada</option>
+                      <option selected value="4">Cancelada</option>
+                    </select>
+                  </div>
+                </form>
+                <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis sunt placeat maiores cumque consequatur velit iste
+                    voluptatem, neque quo reprehenderit quibusdam quos ipsa atque
+                    aut libero eaque, praesentium veniam aliquam.
+                  </td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="descricaoAJ col-3">
+            <h6 class="font-weight-bold">ALPHA JUNIOR CONSULTORIA</h6>
+            <p>
+              Empresa Junior do curso Bacharel em Sistemas de Informação, da
+              <br />
+              Universidade Federal do Estado do Rio de Janeiro
+            </p>
+          </div>
+
+          <div class="contatosAJ">
+            <h6 class="font-weight-bold">CONTATE-NOS</h6>
+            <p><i class="fa fa-home mr-3"></i>Avenida Pasteur 458, RJ</p>
+            <p><i class="fa fa-envelope mr-3"></i> alphajunior@uniriotec.br</p>
+          </div>
+
+          <div>
+            <ul class="formatacao-listaContatos">
+              <li>
+                <a
+                  href="https://www.facebook.com/alphajuniorconsultoria/"
+                  class="btn-sm"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/alphajr_rj/" class="btn-sm">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-sm"> <i class="fab fa-linkedin"></i> </a>
+              </li>
+            </ul>
+
+            <div class="logo">
+              <img src="../images/logotipo-alpha.png" alt=""">
+            </div>
+          </div>
+        </div>
+
+        <hr style="background-color: rgb(64, 64, 70);" />
+
+        <div>
+          <p class="text-center text-md-left">
+            © 2018 Copyright:
+            <a href="https://alphajunior.uniriotec.br" target="blank">
+              <strong>Alpha Junior Consultoria</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
